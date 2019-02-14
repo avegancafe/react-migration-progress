@@ -7,12 +7,13 @@ function App() {
     <div className="App">
       <h1>React Migration Progress</h1>
       <div className="migration-status">
-        <AreaChart data={
-            {
-              [new Date('2/13/2019')]: 11,
-            }
-          }
+        <AreaChart
+          data={{
+            [new Date('2/13/2019')]: 11,
+          }}
           suffix="%"
+          max={100}
+          min={0}
         />
       </div>
     </div>
